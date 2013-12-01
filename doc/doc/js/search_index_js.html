@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>search_index.js - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../config_ru.html">config.ru</a>
+  
+    <li class="file"><a href="../../doc/App_html.html">App.html</a>
+  
+    <li class="file"><a href="../../doc/Gemfile_html.html">Gemfile.html</a>
+  
+    <li class="file"><a href="../../doc/Gemfile_lock_html.html">Gemfile_lock.html</a>
+  
+    <li class="file"><a href="../../doc/HomeController_html.html">HomeController.html</a>
+  
+    <li class="file"><a href="../../doc/Photo_html.html">Photo.html</a>
+  
+    <li class="file"><a href="../../doc/Review_html.html">Review.html</a>
+  
+    <li class="file"><a href="../../doc/Review/Moped_html.html">Moped.html</a>
+  
+    <li class="file"><a href="../../doc/Review/Moped/BSON_html.html">BSON.html</a>
+  
+    <li class="file"><a href="../../doc/SearchController_html.html">SearchController.html</a>
+  
+    <li class="file"><a href="../../doc/UsersController_html.html">UsersController.html</a>
+  
+    <li class="file"><a href="../../doc/Venue_html.html">Venue.html</a>
+  
+    <li class="file"><a href="../../doc/VenuesController_html.html">VenuesController.html</a>
+  
+    <li class="file"><a href="../../doc/config_ru_html.html">config_ru.html</a>
+  
+    <li class="file"><a href="../../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../doc/doc/App_html_html.html">App_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/Gemfile_html_html.html">Gemfile_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/Gemfile_lock_html_html.html">Gemfile_lock_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/HomeController_html_html.html">HomeController_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/Photo_html_html.html">Photo_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/Review/Moped/BSON_html_html.html">BSON_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/Review/Moped_html_html.html">Moped_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/Review_html_html.html">Review_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/SearchController_html_html.html">SearchController_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/UsersController_html_html.html">UsersController_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/Venue_html_html.html">Venue_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/VenuesController_html_html.html">VenuesController_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/config_ru_html_html.html">config_ru_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/App_html_html_html.html">App_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/Gemfile_html_html_html.html">Gemfile_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/Gemfile_lock_html_html_html.html">Gemfile_lock_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/HomeController_html_html_html.html">HomeController_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/Photo_html_html_html.html">Photo_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/Review/Moped/BSON_html_html_html.html">BSON_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/Review/Moped_html_html_html.html">Moped_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/Review_html_html_html.html">Review_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/SearchController_html_html_html.html">SearchController_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/UsersController_html_html_html.html">UsersController_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/Venue_html_html_html.html">Venue_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/VenuesController_html_html_html.html">VenuesController_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/config_ru_html_html_html.html">config_ru_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/created_rid_html_html.html">created_rid_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/App_html_html_html_html.html">App_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/Gemfile_html_html_html_html.html">Gemfile_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/Gemfile_lock_html_html_html_html.html">Gemfile_lock_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/HomeController_html_html_html_html.html">HomeController_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/Photo_html_html_html_html.html">Photo_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/Review/Moped/BSON_html_html_html_html.html">BSON_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/Review/Moped_html_html_html_html.html">Moped_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/Review_html_html_html_html.html">Review_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/SearchController_html_html_html_html.html">SearchController_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/UsersController_html_html_html_html.html">UsersController_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/Venue_html_html_html_html.html">Venue_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/VenuesController_html_html_html_html.html">VenuesController_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/config_ru_html_html_html_html.html">config_ru_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/created_rid_html_html_html.html">created_rid_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/App_html_html_html_html_html.html">App_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/Gemfile_html_html_html_html_html.html">Gemfile_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/Gemfile_lock_html_html_html_html_html.html">Gemfile_lock_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/HomeController_html_html_html_html_html.html">HomeController_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/Photo_html_html_html_html_html.html">Photo_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/Review/Moped/BSON_html_html_html_html_html.html">BSON_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/Review/Moped_html_html_html_html_html.html">Moped_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/Review_html_html_html_html_html.html">Review_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/SearchController_html_html_html_html_html.html">SearchController_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/UsersController_html_html_html_html_html.html">UsersController_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/Venue_html_html_html_html_html.html">Venue_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/VenuesController_html_html_html_html_html.html">VenuesController_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/config_ru_html_html_html_html_html.html">config_ru_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/created_rid_html_html_html_html.html">created_rid_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/doc/created_rid_html_html_html_html_html.html">created_rid_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/index_html_html_html_html_html.html">index_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/js/darkfish_js_html_html_html_html.html">darkfish_js_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/js/jquery_js_html_html_html_html.html">jquery_js_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/js/navigation_js_html_html_html_html.html">navigation_js_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/js/search_index_js_html_html_html_html.html">search_index_js_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/js/search_js_html_html_html_html.html">search_js_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/js/searcher_js_html_html_html_html.html">searcher_js_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/rdoc_css_html_html_html_html.html">rdoc_css_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/doc/table_of_contents_html_html_html_html_html.html">table_of_contents_html_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/index_html_html_html_html.html">index_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/js/darkfish_js_html_html_html.html">darkfish_js_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/js/jquery_js_html_html_html.html">jquery_js_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/js/navigation_js_html_html_html.html">navigation_js_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/js/search_index_js_html_html_html.html">search_index_js_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/js/search_js_html_html_html.html">search_js_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/js/searcher_js_html_html_html.html">searcher_js_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/rdoc_css_html_html_html.html">rdoc_css_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/doc/table_of_contents_html_html_html_html.html">table_of_contents_html_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/index_html_html_html.html">index_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/js/darkfish_js_html_html.html">darkfish_js_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/js/jquery_js_html_html.html">jquery_js_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/js/navigation_js_html_html.html">navigation_js_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/js/search_index_js_html_html.html">search_index_js_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/js/search_js_html_html.html">search_js_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/js/searcher_js_html_html.html">searcher_js_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/rdoc_css_html_html.html">rdoc_css_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/doc/table_of_contents_html_html_html.html">table_of_contents_html_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/index_html_html.html">index_html.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/darkfish_js_html.html">darkfish_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/jquery_js_html.html">jquery_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/navigation_js_html.html">navigation_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/search_index_js_html.html">search_index_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/search_js_html.html">search_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/js/searcher_js_html.html">searcher_js.html</a>
+  
+    <li class="file"><a href="../../doc/doc/rdoc_css_html.html">rdoc_css.html</a>
+  
+    <li class="file"><a href="../../doc/doc/table_of_contents_html_html.html">table_of_contents_html.html</a>
+  
+    <li class="file"><a href="../../doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li class="file"><a href="../../doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li class="file"><a href="../../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li class="file"><a href="../../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../App.html">App</a>
+  
+    <li><a href="../../HomeController.html">HomeController</a>
+  
+    <li><a href="../../Object.html">Object</a>
+  
+    <li><a href="../../Photo.html">Photo</a>
+  
+    <li><a href="../../Review.html">Review</a>
+  
+    <li><a href="../../Review/Moped.html">Review::Moped</a>
+  
+    <li><a href="../../Review/Moped/BSON.html">Review::Moped::BSON</a>
+  
+    <li><a href="../../SearchController.html">SearchController</a>
+  
+    <li><a href="../../SessionsController.html">SessionsController</a>
+  
+    <li><a href="../../User.html">User</a>
+  
+    <li><a href="../../UsersController.html">UsersController</a>
+  
+    <li><a href="../../Venue.html">Venue</a>
+  
+    <li><a href="../../VenuesController.html">VenuesController</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>var search_data = {“index”:{“<a
+href="http://"app","homecontroller","photo","review","moped","bson","searchcontroller","userscontroller","venue","venuescontroller","hola_mundo()","gemfile","gemfile.lock","config.ru","app.html","gemfile.html","gemfile_lock.html","homecontroller.html","photo.html","review.html","moped.html","bson.html","searchcontroller.html","userscontroller.html","venue.html","venuescontroller.html","config_ru.html","created.rid","app_html.html","gemfile_html.html","gemfile_lock_html.html","homecontroller_html.html","photo_html.html","bson_html.html","moped_html.html","review_html.html","searchcontroller_html.html","userscontroller_html.html","venue_html.html","venuescontroller_html.html","config_ru_html.html","created_rid.html","app_html_html.html","gemfile_html_html.html","gemfile_lock_html_html.html","homecontroller_html_html.html","photo_html_html.html","bson_html_html.html","moped_html_html.html","review_html_html.html","searchcontroller_html_html.html","userscontroller_html_html.html","venue_html_html.html","venuescontroller_html_html.html","config_ru_html_html.html","created_rid_html.html","app_html_html_html.html","gemfile_html_html_html.html","gemfile_lock_html_html_html.html","homecontroller_html_html_html.html","photo_html_html_html.html","bson_html_html_html.html","moped_html_html_html.html","review_html_html_html.html","searchcontroller_html_html_html.html","userscontroller_html_html_html.html","venue_html_html_html.html","venuescontroller_html_html_html.html","config_ru_html_html_html.html","created_rid_html_html.html","created_rid_html_html_html.html","index_html_html_html.html","darkfish_js_html_html.html","jquery_js_html_html.html","navigation_js_html_html.html","search_index_js_html_html.html","search_js_html_html.html","searcher_js_html_html.html","rdoc_css_html_html.html","table_of_contents_html_html_html.html","index_html_html.html","darkfish_js_html.html","jquery_js_html.html","navigation_js_html.html","search_index_js_html.html","search_js_html.html","searcher_js_html.html","rdoc_css_html.html","table_of_contents_html_html.html","index_html.html","darkfish_js.html","jquery_js.html","navigation_js.html","search_index_js.html","search_js.html","searcher_js.html","rdoc_css.html","table_of_contents_html.html","index.html","darkfish.js","jquery.js","navigation.js","search.js","search_index.js","searcher.js","rdoc.css","table_of_contents.html"">searchIndex”:</a>,“<a
+href=""app","homecontroller","photo","review","review::moped","review::moped::bson","searchcontroller","userscontroller","venue","venuescontroller","photo#hola_mundo()","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""">longSearchIndex”:</a>,“<a
+href="http://"App","","App.html","",""">info”:[</a>,[“<a
+href="http://"Photo","","Photo.html","",""">HomeController”,“”,“HomeController.html”,“”,“”],</a>,[“<a
+href=""Review::Moped","","Review/Moped.html","",""">Review”,“”,“Review.html”,“”,“”],</a>,[“<a
+href="http://"SearchController","","SearchController.html","",""">Review::Moped::BSON”,“”,“Review/Moped/BSON.html”,“”,“”],</a>,[“UsersController”,“”,“UsersController.html”,“”,“”],[“Venue”,“”,“Venue.html”,“”,“&lt;p&gt;Un
+<a href="../../Venue.html">Venue</a> tiene los siguientes <a
+href="http://"VenuesController","","VenuesController.html","",""">campos:n<p>namen<p>coordinatesn”],</a>,[“hola_mundo”,“Photo”,“Photo.html#method-i-hola_mundo”,“()”,“”],[“Gemfile”,“”,“Gemfile.html”,“”,“&lt;p&gt;source
+“rubygems.org”n&lt;p&gt;gem &amp;#39;sinatra&amp;#39; gem
+&amp;#39;json&amp;#39;, &amp;#39;~&amp;gt; 1.7.7&amp;#39;
+gemn&amp;#39;bson_ext&amp;#39;
+…n”],[“Gemfile.lock”,“”,“Gemfile_lock.html”,“”,“&lt;p&gt;GEMnn&lt;pre&gt;remote:
+<a href="http://rubygems.org/\nspecs:\n">rubygems.org/nspecs:n</a> 
+activemodel (3.2.15)n    activesupport (= 3.2.15)n    builder
+…&lt;/pre&gt;n”],[“config.ru”,“”,“config_ru.html”,“”,“&lt;p&gt;libs =
+File.expand_path “../”, __FILE__ $LOAD_PATH.unshift libs
+unlessn$LOAD_PATH.include?(libs)
+…n”],[“App.html”,“”,“doc/App_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Gemfile.html”,“”,“doc/Gemfile_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Gemfile_lock.html”,“”,“doc/Gemfile_lock_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“HomeController.html”,“”,“doc/HomeController_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Photo.html”,“”,“doc/Photo_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Review.html”,“”,“doc/Review_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Moped.html”,“”,“doc/Review/Moped_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“BSON.html”,“”,“doc/Review/Moped/BSON_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“SearchController.html”,“”,“doc/SearchController_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“UsersController.html”,“”,“doc/UsersController_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Venue.html”,“”,“doc/Venue_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“VenuesController.html”,“”,“doc/VenuesController_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“config_ru.html”,“”,“doc/config_ru_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“created.rid”,“”,“doc/created_rid.html”,“”,“&lt;p&gt;Sun, 01 Dec 2013
+00:39:15 -0430 ./controllers/users_controller.rb      nSat, 30 Nov 2013
+22:17:32 -0430
+…n”],[“App_html.html”,“”,“doc/doc/App_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Gemfile_html.html”,“”,“doc/doc/Gemfile_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Gemfile_lock_html.html”,“”,“doc/doc/Gemfile_lock_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“HomeController_html.html”,“”,“doc/doc/HomeController_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Photo_html.html”,“”,“doc/doc/Photo_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“BSON_html.html”,“”,“doc/doc/Review/Moped/BSON_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Moped_html.html”,“”,“doc/doc/Review/Moped_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Review_html.html”,“”,“doc/doc/Review_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“SearchController_html.html”,“”,“doc/doc/SearchController_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“UsersController_html.html”,“”,“doc/doc/UsersController_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Venue_html.html”,“”,“doc/doc/Venue_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“VenuesController_html.html”,“”,“doc/doc/VenuesController_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“config_ru_html.html”,“”,“doc/doc/config_ru_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“created_rid.html”,“”,“doc/doc/created_rid_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“App_html_html.html”,“”,“doc/doc/doc/App_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Gemfile_html_html.html”,“”,“doc/doc/doc/Gemfile_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Gemfile_lock_html_html.html”,“”,“doc/doc/doc/Gemfile_lock_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“HomeController_html_html.html”,“”,“doc/doc/doc/HomeController_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Photo_html_html.html”,“”,“doc/doc/doc/Photo_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“BSON_html_html.html”,“”,“doc/doc/doc/Review/Moped/BSON_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Moped_html_html.html”,“”,“doc/doc/doc/Review/Moped_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Review_html_html.html”,“”,“doc/doc/doc/Review_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“SearchController_html_html.html”,“”,“doc/doc/doc/SearchController_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“UsersController_html_html.html”,“”,“doc/doc/doc/UsersController_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Venue_html_html.html”,“”,“doc/doc/doc/Venue_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“VenuesController_html_html.html”,“”,“doc/doc/doc/VenuesController_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“config_ru_html_html.html”,“”,“doc/doc/doc/config_ru_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“created_rid_html.html”,“”,“doc/doc/doc/created_rid_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“App_html_html_html.html”,“”,“doc/doc/doc/doc/App_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Gemfile_html_html_html.html”,“”,“doc/doc/doc/doc/Gemfile_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Gemfile_lock_html_html_html.html”,“”,“doc/doc/doc/doc/Gemfile_lock_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“HomeController_html_html_html.html”,“”,“doc/doc/doc/doc/HomeController_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Photo_html_html_html.html”,“”,“doc/doc/doc/doc/Photo_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“BSON_html_html_html.html”,“”,“doc/doc/doc/doc/Review/Moped/BSON_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Moped_html_html_html.html”,“”,“doc/doc/doc/doc/Review/Moped_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Review_html_html_html.html”,“”,“doc/doc/doc/doc/Review_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“SearchController_html_html_html.html”,“”,“doc/doc/doc/doc/SearchController_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“UsersController_html_html_html.html”,“”,“doc/doc/doc/doc/UsersController_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“Venue_html_html_html.html”,“”,“doc/doc/doc/doc/Venue_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“VenuesController_html_html_html.html”,“”,“doc/doc/doc/doc/VenuesController_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“config_ru_html_html_html.html”,“”,“doc/doc/doc/doc/config_ru_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“created_rid_html_html.html”,“”,“doc/doc/doc/doc/created_rid_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“created_rid_html_html_html.html”,“”,“doc/doc/doc/doc/doc/created_rid_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“index_html_html_html.html”,“”,“doc/doc/doc/doc/index_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“darkfish_js_html_html.html”,“”,“doc/doc/doc/doc/js/darkfish_js_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“jquery_js_html_html.html”,“”,“doc/doc/doc/doc/js/jquery_js_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“navigation_js_html_html.html”,“”,“doc/doc/doc/doc/js/navigation_js_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“search_index_js_html_html.html”,“”,“doc/doc/doc/doc/js/search_index_js_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“search_js_html_html.html”,“”,“doc/doc/doc/doc/js/search_js_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“searcher_js_html_html.html”,“”,“doc/doc/doc/doc/js/searcher_js_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“rdoc_css_html_html.html”,“”,“doc/doc/doc/doc/rdoc_css_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“table_of_contents_html_html_html.html”,“”,“doc/doc/doc/doc/table_of_contents_html_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“index_html_html.html”,“”,“doc/doc/doc/index_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“darkfish_js_html.html”,“”,“doc/doc/doc/js/darkfish_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“jquery_js_html.html”,“”,“doc/doc/doc/js/jquery_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“navigation_js_html.html”,“”,“doc/doc/doc/js/navigation_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“search_index_js_html.html”,“”,“doc/doc/doc/js/search_index_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“search_js_html.html”,“”,“doc/doc/doc/js/search_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“searcher_js_html.html”,“”,“doc/doc/doc/js/searcher_js_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“rdoc_css_html.html”,“”,“doc/doc/doc/rdoc_css_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“table_of_contents_html_html.html”,“”,“doc/doc/doc/table_of_contents_html_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“index_html.html”,“”,“doc/doc/index_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“darkfish_js.html”,“”,“doc/doc/js/darkfish_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“jquery_js.html”,“”,“doc/doc/js/jquery_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“navigation_js.html”,“”,“doc/doc/js/navigation_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“search_index_js.html”,“”,“doc/doc/js/search_index_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“search_js.html”,“”,“doc/doc/js/search_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“searcher_js.html”,“”,“doc/doc/js/searcher_js_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“rdoc_css.html”,“”,“doc/doc/rdoc_css_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“table_of_contents_html.html”,“”,“doc/doc/table_of_contents_html_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“index.html”,“”,“doc/index_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8”
+…n”],[“darkfish.js”,“”,“doc/js/darkfish_js.html”,“”,“n&lt;pre&gt;Darkfish
+Page Functionsn$Id: darkfish.js 53 2009-01-07 02:52:03Z deveiant $nnAuthor:
+Michael Granger
+…&lt;/pre&gt;n”],[“jquery.js”,“”,“doc/js/jquery_js.html”,“”,“n&lt;pre&gt;!n
+jQuery JavaScript Library v1.6.2n <a
+href="http://jquery.com/\n\n">jquery.com/nn</a> Copyright 2011, John Resign
+Dual licensed under
+…&lt;/pre&gt;n”],[“navigation.js”,“”,“doc/js/navigation_js.html”,“”,“n&lt;pre&gt;Navigation
+allows movement using the arrow keys through the search results.nnWhen
+using this library
+…&lt;/pre&gt;n”],[“search.js”,“”,“doc/js/search_js.html”,“”,“&lt;p&gt;Search
+= function(data, input, result) {nn&lt;pre&gt;this.data = data;nthis.$input
+= $(input);nthis.$result = $(result);
+…&lt;/pre&gt;n”],[“search_index.js”,“”,“doc/js/search_index_js.html”,“”,“&lt;p&gt;var
+search_data = {“index”:{“searchIndex”:,“longSearchIndex”:,“info”:[,[“
+…n”],[“searcher.js”,“”,“doc/js/searcher_js.html”,“”,“&lt;p&gt;Searcher =
+function(data) {nn&lt;pre&gt;this.data = data;nthis.handlers =
+[];&lt;/pre&gt;n&lt;p&gt;}n”],[“rdoc.css”,“”,“doc/rdoc_css.html”,“”,“n&lt;pre&gt;&amp;quot;Darkfish&amp;quot;
+Rdoc CSSn$Id: rdoc.css 54 2009-01-27 01:09:48Z deveiant $nnAuthor: Michael
+Granger &amp;lt;ged@FaerieMUD.org&amp;gt;
+…&lt;/pre&gt;n”],[“table_of_contents.html”,“”,“doc/table_of_contents_html.html”,“”,“&lt;p&gt;&amp;lt;!DOCTYPE
+html&amp;gt;n&lt;p&gt;&amp;lt;html&amp;gt; &amp;lt;head&amp;gt;
+&amp;lt;meta content=“text/html; charset=UTF-8” …n”]]}}</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

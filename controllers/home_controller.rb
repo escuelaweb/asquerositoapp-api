@@ -1,6 +1,7 @@
 
 class HomeController < App
-  get '/home' do 
+  
+  get '/' do 
     "Hola mundo!"
   end
 end
