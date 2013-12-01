@@ -1,6 +1,6 @@
 
 class UsersController < App
-  get '/users' do
+  get '/' do
     "Get from users"
   end
 end
